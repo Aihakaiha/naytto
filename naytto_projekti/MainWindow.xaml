@@ -1,0 +1,37 @@
+﻿<Window x:Class="naytto_projekti.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:naytto_projekti"
+        mc:Ignorable="d"
+        Title="Etusivu" Height="507.445" Width="760.161" MinHeight="507.445" MinWidth="760.161" MaxHeight="507.445" MaxWidth="760.161">
+    <Grid>
+        <Grid.ColumnDefinitions></Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1.3*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+
+
+            <TextBlock Padding="130, 0, 0, 0" FontSize="30px" Grid.ColumnSpan="2" Height="46" VerticalAlignment="Bottom" Margin="106,0,104,67" HorizontalAlignment="Center" Width="542" >Tervetuloa käyttäjä!</TextBlock>
+            <Button Padding="0, 0, 8, 3" Width="80" Height="30" Margin="652,20,20,157" Click="Button_Click" Content="Kirjaudu"/>
+            <Button Padding="0, 0, 8, 3" Width="80" Height="30" Margin="557,20,115,157" Click="Button_Click_1">Luo käyttäjä</Button>
+        </Grid>
+
+        <Grid Grid.Row="1">
+
+            <TextBlock FontSize="17" Margin="201,72,158,171">Kirjaudu sisään painamalla ylhäältä tai</TextBlock>
+            <TextBlock Foreground="#199bff" FontSize="17" Margin="489,72,144,171" MouseDown="TextBlock_MouseDown">tästä</TextBlock>
+
+            <TextBlock FontSize="17" Margin="192,98,247,144">Jos sinulla ei ole käyttäjää voit luoda sen</TextBlock>
+            <TextBlock Foreground="#199bff" FontSize="17" Margin="497,98,144,142" MouseDown="TextBlock_MouseDown_1">täällä</TextBlock>
+
+
+        </Grid>
+
+
+    </Grid>
+</Window>
